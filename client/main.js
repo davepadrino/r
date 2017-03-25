@@ -36,8 +36,10 @@ Template.hello.events({
     /*Ḥow to return a value from server*/
     Meteor.call('test2',function(error, result){
        	if(error){
+            console.log("hay un error ");
             console.log(error);
         } else {
+            console.log("hay result ");
             console.log(result);
         }
     });
