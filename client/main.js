@@ -22,25 +22,25 @@ Template.hello.events({
     // increment the counter when button is clicked
     instance.counter.set(instance.counter.get() + 1);
 
-    var a = 5;
-    var b = 2;
-
     /*Ḥow to return a value from server*/
-    Meteor.call('test',a,b,function(error, result){
+    Meteor.call('example',function(error, result){
        	if(error){
             console.log(error);
         } else {
-            console.log(result);
+            // console.log(result);
+            console.log(JSON.stringify(result));
         }
     });
 
     /*Ḥow to return a value from server*/
-    Meteor.call('test2',function(error, result){
-       	if(error){
+    Meteor.call('example2',function(error, result){
+        if(error){
             console.log(error);
         } else {
-            console.log(result);
+            // console.log(result);
+            console.log(JSON.stringify(result));
         }
     });
+
   },
 });
