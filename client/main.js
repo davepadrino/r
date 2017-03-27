@@ -24,22 +24,37 @@ Template.hello.events({
 
     var a = 5;
     var b = 2;
+    var route = "/home/vit/Escritorio/r/lib";
+
 
     /*Ḥow to return a value from server*/
     Meteor.call('test',a,b,function(error, result){
-       	if(error){
+        if(error){
             console.log(error);
         } else {
             console.log(result);
         }
     });
 
-    /*Ḥow to return a value from server*/
-    Meteor.call('test2',function(error, result){
+    /*Ḥow to return a value from server
+    /*Ḥow to return a value from server
+    Meteor.call('test0', route, function(error, result){
        	if(error){
             console.log(error);
         } else {
-            console.log(result);
+            console.log("typeof result: "+typeof(result));
+            console.log("test 0 result: "+result);
+        }
+    });
+*/
+    /*Ḥow to return a value from server*/
+    Meteor.call('test2',route,function(error, result){
+       	if(error){
+            console.log("el error es: "+error);
+        } else {
+            console.log("typeof result: "+typeof(result));
+            //console.log("test 0 result: "+result.getOwnPropertyName());
+            console.log("test 0 result: "+result);
         }
     });
   },
