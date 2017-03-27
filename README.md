@@ -26,11 +26,13 @@ And you can stop your RServer with
 	c <- RSconnect()
 	RSshutdown(c)
 
-Now you will have to change the global path of your folder where we keep the R files in the file /lib/global_vars.js
+Now you will have to change the global path of your folder where we keep the R files in the file 
 
-In my case muy route is
+	lib/global_vars.js
 
-	ruta = "/home/miguel/Documentos/meteor/r/r_code/";
+In my case my route is , you can change this or find the work around to make this usefull without the need to define a global 
+
+	route = "/home/miguel/Documentos/meteor/r/r_code/";
 
 
 Finally you can go a play around with the few examples we have here 
