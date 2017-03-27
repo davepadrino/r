@@ -1,4 +1,4 @@
-Executing R script in MeteorJS
+<h1>Executing R script in MeteorJS</h1>
 
 We are using npm package from https://github.com/albertosantini/node-rio
 
@@ -13,10 +13,9 @@ install.packages("RSclient")
 
 After install those package you could do:
 
-´´´
-require("Rserve")
-Rserve(args  = "--vanilla")
-´´´
+`require("Rserve")
+Rserve(args  = "--vanilla")`
+
 
 With only that you could have going RServe
 
