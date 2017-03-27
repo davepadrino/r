@@ -23,7 +23,7 @@ Template.hello.events({
     instance.counter.set(instance.counter.get() + 1);
 
     /*Ḥow to return a value from server*/
-    Meteor.call('example',function(error, result){
+    Meteor.call('example1',function(error, result){
        	if(error){
             console.log(error);
         } else {
