@@ -51,3 +51,20 @@ ENJOY!!
 
 - Send data to a specific function in R a get back the response in a JSON
 
+### Example 3
+
+- Execute sparklyr and return JSON , you will need to install "sparklyr" in R
+
+### Example 4
+
+- Another example with sparklyr
+
+### Example 5
+
+- Read csv from HDFS (you will need to install hadoop and configure it)
+
+### Example 6
+
+- Example of plot in R and save it in your file system like .png , remember to change the file /lib/global_vars.js where you want to keep your image..
+
+
