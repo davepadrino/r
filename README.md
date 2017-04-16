@@ -49,7 +49,7 @@ ENJOY!!
 
 ### Example 3
 
-- Execute sparklyr (Spark library to execute machine learning algorithms) and return JSON , you will need to install "sparklyr" in R 
+- Execute sparklyr (Spark library to execute machine learning algorithms using R) and return JSON , you will need to install "sparklyr" in R 
 
 ### Example 4
 
