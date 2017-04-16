@@ -2,37 +2,33 @@
 
 We are using npm  RIO package from https://github.com/albertosantini/node-rio
 
-Steps to go:  (after clone the code)
+Steps to go:  (after clone the repo)
 
-install RServe in your R console (you could also use R studio)
+install RServe in your R console (you can use R Studio)
 
 
 	install.packages("Rserve")
 	install.packages("RSclient")
 
 
-After install those package you could do:
+After install those packages you should run the next lines to run RServe (TCP/IP server for R):
 
 	require("Rserve")
 	Rserve(args  = "--vanilla")
 
+And you can shutdown your R Server by typing:
 
-With only that , you are now running RServe
-
-And you can stop your RServer with
-
-	# To shutdown the server from R console
 	require("RSclient")
 	c <- RSconnect()
 	RSshutdown(c)
 
-Now you will have to change the global path of your folder where we keep the R files in the file 
+Now you will have to change the global path of your folder where we keep the R files in: 
 
 	lib/global_vars.js
 
-In my case my route is , you can change this or find the work around to make this usefull without the need to define a global 
+In this case the route is , you can change this or find the work around to make this usefull without the need to define a global 
 
-	route = "/home/miguel/Documentos/meteor/r/r_code/";
+	route = "/home/[user]/Documentos/meteor/r/r_code/";
 
 
 Finally you can go a play around with the few examples we have here 
@@ -53,7 +49,7 @@ ENJOY!!
 
 ### Example 3
 
-- Execute sparklyr and return JSON , you will need to install "sparklyr" in R
+- Execute sparklyr (Spark library to execute machine learning algorithms) and return JSON , you will need to install "sparklyr" in R 
 
 ### Example 4
 
@@ -61,7 +57,7 @@ ENJOY!!
 
 ### Example 5
 
-- Read csv from HDFS (you will need to install hadoop and configure it)
+- Read csv from HDFS (Hadoop Distributed File System)(you need to install Hadoop and configure it)
 
 ### Example 6
 
