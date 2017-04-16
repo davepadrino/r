@@ -1,4 +1,4 @@
-# Executing R script in MeteorJS
+# Executing R script in MeteorJS (also Apache Spark and Hadoop!)
 
 We are using npm  RIO package from https://github.com/albertosantini/node-rio
 
